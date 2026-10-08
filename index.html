@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="index.css">
+
+
+
+</head>
+<body>
+   
+<div class="all">
+    <div class="head">
+        <h1>ALi ERP</h1>
+        <p>Precised Calculations , Trusted Management</p>
+
+    </div>
+
+
+    <div class="inputs">
+        <input type="text" id="title" placeholder="Title">
+        <div class="money">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+            <small id="total"></small>
+        </div>
+
+        <div id="cou-cat">
+        <input type="text" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="category">
+        </div>
+
+        <button id="create-btn">Create</button>
+    </div>
+
+
+    <div class="render">
+        <div class="search-box">
+            <input type="text" placeholder="Search" id="search">
+            <div class="search-btns">
+                <button id="s-by-title">Search By Title</button>
+                <button id="s-by-category">Search By Category</button>
+            </div>
+            
+        </div>
+        <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody>
+
+                <!-- dummy data -->
+                <tr>
+                    <td>0</td>
+                    <td>samsung</td>
+                    <td>2000</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                    
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>samsung</td>
+                    <td>2000</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                    
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>samsung</td>
+                    <td>2000</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                    
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>samsung</td>
+                    <td>2000</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                    
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>samsung</td>
+                    <td>2000</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>5000</td>
+                    <td>phone</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                    
+                </tr>
+
+                </tbody>
+
+
+
+            </table>
+    </div>
+</div>
+ 
+<button id="crazy-btn">X</button>
+
+
+
+
+
+    <script src="main.js"> </script>
+</body>
+
+</html>

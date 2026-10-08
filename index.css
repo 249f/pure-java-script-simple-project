@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    
+}
+
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+.all{
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid; */
+}
+.head{
+    text-align: center;
+    margin-top: 20px;
+    width: fit-content;
+    
+
+}
+.head h1{
+    margin-bottom: 12px;
+}
+.head p{
+    font-weight: 700;
+    border-bottom: 1px solid aliceblue;
+    width: fit-content;
+    
+}
+.inputs{
+    width: 70%;
+    margin-top: 30px;
+     /* border: 2px solid; */
+     text-align: center;
+}
+input{
+    /* width: 8%; */
+    color: aliceblue;
+    outline: none;
+    background-color: black;
+    border: 1px solid aliceblue;
+    margin: 8px 0;
+    border-radius: 8px;
+    height: 30px;
+    padding: 4px;
+    font-size: large;
+}
+#total::before{
+    content: "total : ";
+    font-size: large;
+    text-transform: uppercase;
+}
+#total{
+    font-size: larger;
+}
+.money{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+.money input{
+    width: 30%;
+}
+button{
+    width: 75%;
+    height: 35px;
+    color: aliceblue;
+    background-color: rgb(255, 0, 76);
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    /* display: block; */
+    margin: 10px;
+    min-width: fit-content;
+    padding: 10px 10px 31px 10px;
+    transition: 0.5s;
+}
+button:hover{
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    
+   
+}
+.search-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.render{
+    width: 58.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+
+th{
+    border-bottom: 1px solid rgb(255, 0, 76);
+    padding: 15px;
+    background-color: rgb(22, 22, 22);
+    text-transform: capitalize;
+}
+#search{
+    width: 30%;
+}
+.search-box{
+    display: flex;
+    width: 120%;
+    /* border: 2px solid; */
+    
+    
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.search-btns button{
+    width: 350px;
+}
+.search-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    width: 99%;
+}
+#create-btn{
+    width: 100%;
+    position: relative;
+    right: 10px;
+
+    
+}
+#cou-cat{
+    width: 99%;
+
+}
+#cou-cat input{
+    width: 100%;
+}
+table button:hover{
+    letter-spacing: normal;
+}
+input:focus{
+    border: 2px solid rgb(255, 0, 76)
+}
+#crazy-btn{
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 100%;
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+}
