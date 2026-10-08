@@ -43,8 +43,21 @@ create.onclick = function(){
         category:category.value
     }
     products.push(newpro)
-    localStorage.productsData = JSON.stringify(products) 
+    localStorage.productsData = JSON.stringify(products)
+    clearInputs(); 
 
+}
+
+// clear inputs function
+function clearInputs(){
+    title.value = '';
+    price.value = '';
+    taxes.value = '';
+    ads.value = '';
+    discount.value = '';
+    total.innerHTML = ''
+    count.value = '';
+    category.value = '';
 }
 
 // xxxxxxxxxxxx clear storage btn xxxxxxxxxxxxxx
