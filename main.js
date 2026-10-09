@@ -101,7 +101,7 @@ function fetchdata(){
 // invoke the function on load
 fetchdata();
 
-// ---------------- delete button function ----------------
+// ---------------- delete section ----------------
 function deletebtn(i){
     products.splice(i,1);
     localStorage.productsData = JSON.stringify(products);
