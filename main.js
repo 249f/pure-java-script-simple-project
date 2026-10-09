@@ -45,7 +45,7 @@ create.onclick = function(){
     products.push(newpro)
     localStorage.productsData = JSON.stringify(products)
     clearInputs(); 
-
+    fetchdata();
 }
 
 // clear inputs function
@@ -60,8 +60,44 @@ function clearInputs(){
     category.value = '';
 }
 
+// -----------------Fetch data function---------------
+function fetchdata(){
+    let tbody = document.getElementById("tbody")
+
+    // empty place to hold the HTML code
+    let table = ''
+    for(let i = 0 ; i < products.length; i++ ){
+        
+        // "+=" instead of the normal "=" so we keep adding code to the existed code
+        table += `
+        <tr>
+                    <td>${i}</td>
+                    <td>${products[i].title}</td>
+                    <td>${products[i].price}</td>
+                    <td>${products[i].taxes}</td>
+                    <td>${products[i].ads}</td>
+                    <td>${products[i].discount}</td>
+                    <td>${products[i].total}</td>
+                    <td>${products[i].category}</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                    
+                </tr>
+        `
+    }
+
+    // adding the html code to table body
+    tbody.innerHTML = table;
+}
+
+// invoke the function on load
+fetchdata();
+
+
 // xxxxxxxxxxxx clear storage btn xxxxxxxxxxxxxx
 let crazy = document.getElementById("crazy-btn")
 crazy.onclick = function(){
     localStorage.clear();
+    products = []
+    fetchdata();
 }
