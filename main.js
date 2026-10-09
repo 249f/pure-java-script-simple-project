@@ -80,7 +80,7 @@ function fetchdata(){
                     <td>${products[i].total}</td>
                     <td>${products[i].category}</td>
                     <td><button id="update">update</button></td>
-                    <td><button id="delete">delete</button></td>
+                    <td><button onClick = "deletebtn(${i})" id="delete">delete</button></td>
                     
                 </tr>
         `
@@ -92,6 +92,14 @@ function fetchdata(){
 
 // invoke the function on load
 fetchdata();
+
+// ---------------- delete button function ----------------
+function deletebtn(i){
+    products.splice(i,1);
+    localStorage.productsData = JSON.stringify(products);
+    fetchdata();
+    
+}
 
 
 // xxxxxxxxxxxx clear storage btn xxxxxxxxxxxxxx
