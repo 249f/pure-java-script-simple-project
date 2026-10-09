@@ -88,6 +88,14 @@ function fetchdata(){
 
     // adding the html code to table body
     tbody.innerHTML = table;
+
+
+    // Delete All button
+    let deleteAllDiv = document.getElementById("deleteAll");
+    if (products.length > 0){
+    deleteAllDiv.innerHTML = `<button onClick = "delete_all_function()">delete all</button>`}
+    else{
+     deleteAllDiv.innerHTML = "";}
 }
 
 // invoke the function on load
@@ -99,6 +107,13 @@ function deletebtn(i){
     localStorage.productsData = JSON.stringify(products);
     fetchdata();
     
+}
+
+// delete all function
+function delete_all_function(){
+    products = [];
+    localStorage.clear();
+    fetchdata();
 }
 
 
